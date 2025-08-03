@@ -16,8 +16,6 @@ const WebSocket = require('ws');
 
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost:27017/streamengine');
-const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost:27017/streamengine');
 const redis = require('redis');
 const redisClient = redis.createClient({ url: process.env.REDIS_URL || 'redis://localhost:6379' });
 redisClient.connect();
