@@ -1,6 +1,5 @@
 console.log('Backend starting...');
 
-const redis = require('redis');
 const express = require('express');
 const app = express();
 const logger = require('./logger');
